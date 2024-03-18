@@ -5,14 +5,17 @@ const divide = (arr, n) => {
 	
 	for (let i = 0; i < arr.length; i++) {
 		let maxSum = 0;
+		
 		for (let j = i; j < arr.length; j++) {
+			
 			maxSum = maxSum + arr[j];
 			if (maxSum<=n) {
-				
+				console.log(arr[j]);
+				break;
 			}
 		}
 	}
-};
+}
 
 //const n = prompt("Enter n: ");
 //alert(JSON.stringify(divide(arr, n)));
